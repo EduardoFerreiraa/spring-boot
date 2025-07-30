@@ -11,7 +11,7 @@ import com.example.meu_primeiro_spring_boot.model.Usuario;
 public class UsuarioController {
 
     @PostMapping("/usuario")
-    public String criarUsuario(@RequestBody Usuario usuario) {        
+    public String criarUsuario(@RequestBody Usuario usuario) {
         return "Usuario criado: " + usuario.getNome() + ", email: " + usuario.getEmail();
     }
     
